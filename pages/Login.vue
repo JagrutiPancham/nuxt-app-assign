@@ -6,10 +6,18 @@
         </p>
         <div>
             <input v-model="username" type="text" placeholder="User Name" class="text-sm text-gray-base w-full mr-3 py-5 px-4 h-2 border border-gray-200 rounded mb-2" />
-            <input v-model="password" type="password" placeholder="Password" class="text-sm text-gray-base w-full mr-3py-5 px-4 h-2 border border-gray-200 rounded mb-2" />
+            <input v-model="password" type="password" placeholder="Password" class="text-sm text-gray-base w-full mr-3 py-5 px-4 h-2 border border-gray-200 rounded mb-2" />
            
             <div class="flex justify-center border-black">
-                <button @click="login" class="shadow bg-purple-100 hover:bg-grey-1000 focus:shadow-outline focus:outline-none text-black border-black font-bold py-2 px-4 rounded">Submit</button>
+                <button @click="login" class="shadow bg-purple-100 hover:bg-grey-1000 focus:shadow-outline 
+                     focus:outline-none text-black border-black font-bold py-2 px-4 rounded">
+                        <NuxtLink to ="/bucket">Submit</NuxtLink>
+                </button>
+            </div>
+            <div>
+                <NuxtLink to="/signUp" >
+               <h1 class="text-violet-500">Register</h1>
+                </NuxtLink>
             </div>
         </div>
     </div>
