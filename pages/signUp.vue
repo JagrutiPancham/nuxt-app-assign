@@ -1,6 +1,9 @@
 <template>
 <div flex items-center justify-center min-h-screen bg-gray-100>
-    <h1>Register</h1>
+    <br/>
+    <br/>
+    <h1><strong>Register</strong></h1>
+    <br/>
     <form method="post">
         <input type="text" placeholder="User name" v-model="username" id="name"><br>
 
@@ -51,10 +54,10 @@ div {
 input[type=text],
 input[type=password] {
     background-color: rgb(241, 245, 247);
-    width: 20%;
-    padding: 12px 20px;
+    width: 30%;
+    padding: 10px 30px;
     border-radius: 4px;
-    margin: 8px 2px;
+    margin: 10px 2px;
     display: inline-block;
     border: 1px solid rgb(17, 17, 17);
     box-sizing: border-box;
@@ -64,10 +67,10 @@ button {
     background-color: skyblue;
     color: white;
     padding: 14px;
-    margin: 2px;
+    margin: 10px 2px;
     border: 1px solid rgb(17, 17, 17);
     cursor: pointer;
-    width: 20%;
+    width: auto;
 
 }
 </style>

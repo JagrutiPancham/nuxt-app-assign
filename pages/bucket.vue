@@ -31,13 +31,13 @@
             </div>
         </div>
         <div class="m-8">
-            <div>
+            <div class="mx-34">
                 <h4 align="center"><b><u>Basket stack</u></b></h4>
             </div>
             <div>
             <center>
             <table class="w-64  items-center justify-center"><tr class="border-solid border-2 border-black-600 w-10" v-for="(basket, index) in basket.slice().reverse()" :key="index">
-            <td>{{basket}}</td>
+            <td :class="bckg[basket]">{{basket}}</td>
             </tr></table>
             </center>
             </div>
@@ -49,6 +49,7 @@
    export default {
     data() {
         return {
+            
             "apple": {
                 name: "Apple",
                 count: 10,
@@ -64,7 +65,12 @@
                 count: 10,
                 color: ""
             },
-            basket: []
+            basket: [],
+            bckg:{
+                "Apple": 'app',
+                "Orange": 'ora',
+                "Grapes": 'gra'
+            }
         }
     },
     methods: {
@@ -126,6 +132,17 @@
     }
 }
     </script>
-    <style>
-    
+    <style scoped>
+    .app{
+         background-color: rgb(248 113 113);
+         /* red 400 */
+    }
+    .ora{
+        background-color: rgb(134 239 172);
+        /* green 300 */
+    }
+    .gra{
+        background-color: rgb(96 165 250);
+        /* blue 400 */
+    }
     </style>

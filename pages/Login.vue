@@ -16,7 +16,7 @@
             </div>
             <div>
                 <NuxtLink to="/signUp" >
-               <h1 class="text-violet-500">Register</h1>
+               <h1 class="text-white ">Register</h1>
                 </NuxtLink>
             </div>
         </div>
